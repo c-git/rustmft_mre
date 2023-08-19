@@ -9,3 +9,12 @@ fn main() {
     };
     // If the text inside of the format string is 1 char shorter the problem goes away
 }
+
+// error[internal]: left behind trailing whitespace
+//  --> /home/one/rustfmt_mre/src/main.rs:5:5:19
+//   |
+// 5 |         Ok(_) => {
+//   |                   ^^^
+//   |
+
+// warning: rustfmt has failed to format. See previous 1 errors.
